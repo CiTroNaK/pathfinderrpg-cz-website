@@ -5,6 +5,30 @@ module.exports = {
     repo: 'https://gitlab.com/citronak/pathfinder-rpg-cz',
     editLinks: true,
     editLinkText: 'Pomoz mi zlepšit obsah!',
+    head: [
+      ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon.png', sizes: '180x180' }],
+      ['link', {
+        rel: 'icon',
+        type: 'image/png',
+        href: '/favicon-32x32.png',
+        sizes: '32x32'
+      }],
+      ['link', {
+        rel: 'icon',
+        type: 'image/png',
+        href: '/favicon-16x16.png',
+        sizes: '16x16'
+      }],
+      ['link', {
+        rel: 'mask-icon',
+        href: '/safari-pinned-tab.svg',
+        color: '#5bbad5'
+      }],
+      ['meta', {
+        name: 'theme-color',
+        content: '#ffffff'
+      }],
+    ],
     nav: [
       {
         text: 'O hře',
