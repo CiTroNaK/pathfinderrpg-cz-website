@@ -1,0 +1,47 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: ''
+webhook_url: 
+sections:
+- type: document
+  path: README.md
+  label: Úvod
+- type: directory
+  path: o-hre
+  label: O hře
+  create: all
+  match: "**/*"
+- type: directory
+  path: jak-si-hru-vyzkouset
+  label: Jak začít hrát
+  create: all
+  match: "**/*"
+- type: directory
+  path: pravidla
+  label: Pravidla
+  create: all
+  match: "**/*"
+- type: directory
+  path: publikace
+  label: Publikace
+  create: all
+  match: "**/*"
+- type: directory
+  path: o-webu
+  label: O webu
+  create: all
+  match: "**/*"
+upload_dir: ".vuepress/public"
+public_path: ''
+front_matter_path: ''
+use_front_matter_path: false
+file_template: ":filename:"
+build:
+  preview_command: vuepress build -d .vuepress/dist
+  publish_command: vuepress build -d .vuepress/dist
+  preview_output_directory: ".vuepress/dist"
+  output_directory: ".vuepress/dist"
+  instant_preview_command: vuepress dev -p 8080 -h 0.0.0.0
+  preview_docker_image: node:10
+  mount_path: "/srv"
