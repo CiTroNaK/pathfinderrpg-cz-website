@@ -2,7 +2,7 @@ module.exports = {
   title: 'Pathfinder RPG',
   description: 'První Edice',
   themeConfig: {
-    repo: 'https://gitlab.com/citronak/pathfinder-rpg-cz',
+    repo: 'https://github.com/CiTroNaK/pathfinderrpg-cz-website',
     editLinks: true,
     editLinkText: 'Pomoz mi zlepšit obsah!',
     head: [
@@ -59,7 +59,10 @@ module.exports = {
   plugins: {
     '@vuepress/pwa': {
       serviceWorker: true,
-      updatePopup: true
+      updatePopup: {
+        message: "Nový obsah k dispozici.",
+        buttonText: "Aktualizovat"
+      }
     },
     '@vuepress/google-analytics': {
       ga: 'UA-96539393-1'
